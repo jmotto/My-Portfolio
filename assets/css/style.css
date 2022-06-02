@@ -1,0 +1,58 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #032f03df;
+    padding: 40px;
+}
+
+header h1 {
+    border-color: #cff4f4;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #cff4f4;
+    padding: 10px;
+    width: 8em;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    font-size: 16px;
+    background-color: lavender;
+}
+  
+body {
+    background: lavender;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.nav {
+    justify-content: right;
+    align-items: center;
+}
+
+.nav .col {
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background-color: black;
+    color: white;
+}
+
