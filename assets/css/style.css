@@ -4,17 +4,17 @@
 }
 
 :root {
-    --dark: darkslategray;
+    --dark: #2f4f4f;
+    --light: #f5f5f5dc;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-size: 16px;
-    min-height: 100vh;
-    background-color: #f5f5f5dc;
-    justify-content: flex-start;
+    background-color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
     margin: 0;
+    padding: 0;
 }
   
 header {
@@ -22,18 +22,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: darkslategray;
+    background-color: var(--dark);
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 header h1 {
-    color: darkslategray;
-    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-style: italic;
     text-align: right;
-    background-color: #f5f5f5dc;
+    background-color: var(--light);
     padding: 10px 10px 10px 100px;
     position: relative;
     right: 20px;
@@ -49,8 +49,8 @@ header h1 {
 }
 
 .top-nav a:hover {
-    background-color: #f5f5f5dc;
-    color: darkslategray;  
+    background-color: var(--light);
+    color: var(--dark);  
 }
 
 .top-nav a {
@@ -78,14 +78,14 @@ header h1 {
     text-align: right;
     margin-bottom: 100px;
     margin-left: 1px;
-    background-color: darkslategrey;
+    background-color: #667761;
     border-radius: 30px;
-    color: #f5f5f5dc;
+    color: var(--light);
     font-family: 'Raleway', sans-serif; 
     font-weight: 100px;
     padding: 10px;
 }
-/* Image from Linkedin profile in Hero Banner */
+/* Image on Hero Banner */
 img {
     display: flex;
     height: 200px;
@@ -97,9 +97,21 @@ img {
 
 /* Main Content */
 main {
-    width: 100%;
-    display: block;
+    max-width: 100%;
+
 }
+
+p {
+    margin: 0;
+    text-align: center;
+  
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
 
 .content {
     margin-left: 10px;
@@ -107,63 +119,79 @@ main {
     margin-right: 10px;
     padding: 50px;
     height: 200px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    display: flex;
-    /* flex-direction: row; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
 }
 
 
 .content h2 {
-    display: block;
-    background-color: black;
-    padding: 20px;
+    display: flex;
+    background-color: #667761;
+    padding: 0px;
     width: 150px;
+    height: 50px;
     border-radius: 20px;
     flex: none;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
     
 }
 
-#about-me {
-    background-color: darkslategray;
-    color: #f5f5f5dc;
-  
+.content p {
+    margin-bottom: 20px;
 }
 
+#about-me {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    display: block;
+}
+
+
 #projects {
-    background-color: darkslategray;
-    color: #f5f5f5dc;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+#projects img {
+    width: 150px;
+    height: 150px;
 }
 
 #resume {
-    background-color: darkslategray;
-    color: #f5f5f5dc;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+#resume img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
 }
 
 #contact {
-    background-color: darkslategray;
-    color: #f5f5f5dc;
+    background-color: var(--dark);
+    color: var(--light);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
-
-  
-}
-
-p {
-    padding: 10px;
 }
 
 #contact a {
     padding: 10px;
     align-items: center;
     text-decoration: none;
-    color: #ffff;
+    color: var(--light);
     padding: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -171,19 +199,26 @@ p {
 }
 
 #contact a:hover {
-    background-color: #f5f5f5dc;
-    color: darkslategray;  
+    background-color: var(--light);
+    color: var(--dark);  
 }
+
 
 /* Footer */
 footer {
     background-color: var(--dark);
     text-align: center;
-    color: #f5f5f5dc;
+    color: var(--light);
 }
 
-@media screen and (max-width: 768px) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }}
+
+  @media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;}
+
+    
+    }
