@@ -29,7 +29,6 @@ header {
 
 header h1 {
     color: var(--dark);
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-style: italic;
     text-align: right;
@@ -56,11 +55,9 @@ header h1 {
 .top-nav a {
     color: #ffff;
     padding: 10px;
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
     text-decoration: none;
 }
-
 
 /* Hero Banner */
 .hero-banner {
@@ -101,26 +98,21 @@ main {
 
 }
 
-p {
-    margin: 0;
-    text-align: center;
-  
-}
-
 h2 {
     text-align: center;
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
 
 .content {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 50px;
+    margin: 15px;
+    padding: 30px;
     height: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
@@ -134,30 +126,34 @@ h2 {
     width: 150px;
     height: 50px;
     border-radius: 20px;
-    flex: none;
     text-align: center;
     align-items: center;
     
-}
-
-.content p {
-    margin-bottom: 20px;
 }
 
 #about-me {
     background-color: var(--dark);
     color: var(--light);
     text-align: center;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
+#about-me p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    justify-content: center;
+}
 
 #projects {
     background-color: var(--dark);
     color: var(--light);
     text-align: center;
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #projects img {
@@ -168,12 +164,6 @@ h2 {
 #resume {
     background-color: var(--dark);
     color: var(--light);
-    text-align: center;
-}
-
-#resume img {
-    width: 150px;
-    height: 150px;
     text-align: center;
 }
 
@@ -215,10 +205,7 @@ footer {
   @media screen and (max-width: 768px) {
     header, main {
       flex-direction: column;
+      width: 100%;
     }
-  
-    section {
-      padding-right: 0;}
-
-    
     }
+   
