@@ -1,4 +1,4 @@
-# My Portfolio
+# Jamie Otto's Portfolio
 
 ## Portfolio Challenge 
 
@@ -14,6 +14,7 @@ The portfolio challenge is to build a webpage from scratch displaying my work an
 
 
 ### My Portfolio
+[Jamie's Portfolio](https://jmotto.github.io/My-Portfolio/)
 <img src="./assets/images/Portfolio-Screenshot.png">
 
 
