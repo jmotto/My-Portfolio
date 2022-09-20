@@ -92,7 +92,7 @@ header h1 {
     flex-wrap: wrap;
 }
 
-.proj1 {
+.project-card {
     display: flex;
     height: 50px;
     padding: 0;
