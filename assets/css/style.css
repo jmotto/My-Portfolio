@@ -95,7 +95,7 @@ header h1 {
 .project-card {
     display: flex;
     height: 50px;
-    padding: 0;
+    padding: 10;
     border-radius: 20px;
     flex-direction: row;
     flex-wrap: wrap;
